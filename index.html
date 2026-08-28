@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>星火项目 · 运营计划书（九年级读写联动训练库）</title>
+<style>
+  :root{
+    --green:#2E7D5B; --green-d:#1f5c42; --cream:#FBF7EF; --ink:#23332c;
+    --line:#e3ddd0; --tch:#2E7D5B; --par:#C77B30; --warn:#b3402e;
+  }
+  *{box-sizing:border-box}
+  body{margin:0;font-family:-apple-system,"PingFang SC","Microsoft YaHei",sans-serif;
+    background:var(--cream);color:var(--ink);line-height:1.7;font-size:15px}
+  header{background:linear-gradient(135deg,var(--green),var(--green-d));color:#fff;padding:34px 22px}
+  header h1{margin:0 0 6px;font-size:24px;letter-spacing:1px}
+  header .meta{opacity:.92;font-size:13px}
+  .wrap{max-width:1080px;margin:0 auto;padding:22px}
+  section{background:#fff;border:1px solid var(--line);border-radius:12px;padding:20px 22px;margin:16px 0;
+    box-shadow:0 1px 3px rgba(0,0,0,.04)}
+  h2{color:var(--green-d);border-left:5px solid var(--green);padding-left:10px;margin:4px 0 14px;font-size:19px}
+  h3{color:var(--green);margin:16px 0 8px;font-size:16px}
+  p,li{margin:6px 0}
+  table{border-collapse:collapse;width:100%;font-size:13.5px;margin:8px 0}
+  th,td{border:1px solid var(--line);padding:8px 9px;text-align:left;vertical-align:top}
+  th{background:#eef5f0;color:var(--green-d);font-weight:600}
+  tr:nth-child(even) td{background:#fafcfb}
+  .tag{display:inline-block;padding:1px 8px;border-radius:20px;font-size:12px;color:#fff;font-weight:600}
+  .tch{background:var(--tch)} .par{background:var(--par)}
+  .st{font-weight:600}
+  .st-todo{color:#9a8f7a} .st-today{color:var(--warn)} .st-done{color:var(--green)}
+  .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:12px}
+  .card{border:1px solid var(--line);border-radius:10px;padding:14px;background:#fcfbf7}
+  .card b{color:var(--green-d)}
+  .note{background:#fff8ec;border:1px solid #f0e2c4;border-radius:8px;padding:10px 12px;font-size:13px}
+  code{background:#eef5f0;padding:1px 6px;border-radius:5px;font-size:13px}
+  footer{text-align:center;color:#8a8377;font-size:12px;padding:18px}
+  a{color:var(--green)}
+</style>
+</head>
+<body>
+<header>
+  <h1>🔥 星火项目 · 运营计划书</h1>
+  <div class="meta">产品：《九年级读写联动训练库》（教师版30篇 + 学生版30篇，5大模块/30种写作手法，PDF）<br>
+  运营周期：2026-08-28 ～ 2026-09-26（单课件 1 个月，满 30 天停更换下一课件）｜ 对外版（供团队同事知悉）</div>
+</header>
+<div class="wrap">
+
+  <section>
+    <h2>一、项目背景与产品定位</h2>
+    <p><b>产品</b>：《九年级读写联动训练库》PDF，分教师版（30 篇教学设计，解决备课）与学生版（30 篇训练，解决提分），覆盖 5 大模块 / 30 种写作手法。</p>
+    <p><b>成交路径（小红书内闭环）</b>：笔记种草 → 主页挂「小红书个人售卖 / 店铺」上架课件 → 平台内下单成交（钱与售后都在小红书，不跳外部平台）。</p>
+    <p><b>目标人群（双线）</b>：语文老师约 6 成（备课刚需、客单高、复购转介绍强）＋ 家长/学生约 4 成（中考提分焦虑流量）。</p>
+    <p><b>人设</b>：真实一线初中语文老师「方老师」，带过三届毕业班，懂中考阅卷尺度与提分逻辑；品牌名「青禾语文」。</p>
+  </section>
+
+  <section>
+    <h2>二、团队与分工</h2>
+    <div class="grid">
+      <div class="card"><b>团队名</b><br>星火项目</div>
+      <div class="card"><b>方孟克 · 项目总负责</b><br>产品开发、粉丝互动、群聊答疑</div>
+      <div class="card"><b>郑成博 · 运营负责人</b><br>日常运营、发布文章、群聊日常维护<br><span style="font-size:12px;color:#8a8377">（GitHub 账号持有者）</span></div>
+      <div class="card"><b>星火助手 · 运营人员（AI）</b><br>各类策划、生成文章、写运营计划、做运营记录等日常运营具体事务</div>
+    </div>
+  </section>
+
+  <section>
+    <h2>三、运营核心规则</h2>
+    <h3>3.1 执行铁律（协作规矩）</h3>
+    <div class="note">执行任何任务前，星火助手先「复述理解」→ 方老师 / 郑成博确认「可以」→ 再动手。确认前不擅自生成、不发布、不改文档。</div>
+    <h3>3.2 长文模式「一篇笔记」交付标准</h3>
+    <ol>
+      <li><b>笔记内容</b>（长文纯文字）：方老师自行转成图片，图片上含全部笔记内容。</li>
+      <li><b>配文</b>：不重复笔记内容；作用＝钩子＋人设＋搜索关键词＋互动引导＋转化收口；结尾必须带「引导下单」语句（发布后挂的课件商品显示在配文最下方）。</li>
+      <li><b>课件完整截图</b>：由星火助手生成（渲染成课件风格页面图；若提供真实课件 PDF 则替换为真实截图）。</li>
+      <li><b>Word 文档</b>：含两部分——笔记内容 ＋ 配文。</li>
+      <li><b>同名文件夹</b>：图片与 Word 放入以「文章标题」命名的单独文件夹。</li>
+    </ol>
+    <h3>3.3 单课件运营周期</h3>
+    <p>每个课件集中运营 <b>1 个月</b>：满 30 天停更，切换下一课件；「青禾语文」账号长期保留，内容随产品轮换，下个课件重新起一轮 30 天。</p>
+  </section>
+
+  <section>
+    <h2>四、一个月文章内容策划（30 天 · 双线 6:4）</h2>
+    <p style="font-size:13px;color:#8a8377">说明：<span class="tag tch">师</span> 老师线（约 60%）　<span class="tag par">家</span> 家长/学生线（约 40%）。发布时间建议：晚 19:30 / 午 12:00–12:30 / 晚 20:00；发后 2 小时内互动。</p>
+    <table>
+      <tr><th>日</th><th>日期</th><th>周</th><th>线</th><th>文章主题</th><th>笔记内容方向</th><th>配文方向</th><th>发布</th><th>状态</th></tr>
+      <tr><td>1</td><td>8/28</td><td>五</td><td><span class="tag tch">师</span></td><td>带过三届毕业班，我发现 90% 孩子作文输在"不会读"</td><td>读与写的关系，引入读写联动训练法</td><td>人设+钩子+引导下单</td><td>19:30</td><td class="st st-today">今日待发</td></tr>
+      <tr><td>2</td><td>8/29</td><td>六</td><td><span class="tag tch">师</span></td><td>备课3小时 vs 3分钟：一份可直接抄的九年级教学设计长啥样</td><td>展示教师版课件价值（省时）</td><td>备课减负共鸣</td><td>12:00</td><td class="st st-todo">待写</td></tr>
+      <tr><td>3</td><td>8/30</td><td>日</td><td><span class="tag par">家</span></td><td>孩子作文总写不长？不是词汇少，是没"读进去"</td><td>家长向痛点解析</td><td>家长焦虑共鸣</td><td>20:00</td><td class="st st-todo">待写</td></tr>
+      <tr><td>4</td><td>8/31</td><td>一</td><td><span class="tag tch">师</span></td><td>30种写作手法，中考最爱考这5种（附范文）</td><td>干货速查+范文</td><td>收藏引导</td><td>19:30</td><td class="st st-todo">待写</td></tr>
+      <tr><td>5</td><td>9/1</td><td>二</td><td><span class="tag par">家</span></td><td>九年级作文想上一类文，先搞定这3个底层能力</td><td>提分底层能力</td><td>家长种草</td><td>12:30</td><td class="st st-todo">待写</td></tr>
+      <tr><td>6</td><td>9/2</td><td>三</td><td><span class="tag tch">师</span></td><td>我改了1000篇中考作文，高分都用了同一个结构</td><td>结构方法论</td><td>方法论共鸣</td><td>19:30</td><td class="st st-todo">待写</td></tr>
+      <tr><td>7</td><td>9/3</td><td>四</td><td><span class="tag par">家</span></td><td>陪读别只会催"多读书"，做对这件事才提分</td><td>陪读疏导</td><td>家长共鸣</td><td>20:00</td><td class="st st-todo">待写</td></tr>
+      <tr><td>8</td><td>9/4</td><td>五</td><td><span class="tag tch">师</span></td><td>读写联动怎么练？我把它拆成"读一句写一句"</td><td>方法论+种草</td><td>干货+引导下单</td><td>19:30</td><td class="st st-todo">待写</td></tr>
+      <tr><td>9</td><td>9/5</td><td>六</td><td><span class="tag tch">师</span></td><td>课件里这页"手法速查表"，学生3周就敢下笔</td><td>展示学生版课件价值</td><td>课件种草</td><td>12:00</td><td class="st st-todo">待写</td></tr>
+      <tr><td>10</td><td>9/6</td><td>日</td><td><span class="tag par">家</span></td><td>中考作文评分标准，家长看懂就能帮孩子避坑</td><td>评分标准解读</td><td>家长干货</td><td>20:00</td><td class="st st-todo">待写</td></tr>
+      <tr><td>11</td><td>9/7</td><td>一</td><td><span class="tag tch">师</span></td><td>细节描写总写假？用"五感+慢镜头"一练就会</td><td>具体手法拆解</td><td>收藏引导</td><td>19:30</td><td class="st st-todo">待写</td></tr>
+      <tr><td>12</td><td>9/8</td><td>二</td><td><span class="tag par">家</span></td><td>孩子只会写"很高兴"？3个替换让它变生动</td><td>家长向小技巧</td><td>家长收藏</td><td>12:30</td><td class="st st-todo">待写</td></tr>
+      <tr><td>13</td><td>9/9</td><td>三</td><td><span class="tag tch">师</span></td><td>议论文立意老套？"反着想"一课通的模板</td><td>手法模板</td><td>方法论</td><td>19:30</td><td class="st st-todo">待写</td></tr>
+      <tr><td>14</td><td>9/10</td><td>四</td><td><span class="tag tch">师</span></td><td>一份教学设计里，我藏了哪些提分小心机</td><td>课件拆解+种草</td><td>课件转化</td><td>20:00</td><td class="st st-todo">待写</td></tr>
+      <tr><td>15</td><td>9/11</td><td>五</td><td><span class="tag par">家</span></td><td>真实案例：用训练库3周，作文从32到41</td><td>学生提分案例</td><td>案例见证</td><td>19:30</td><td class="st st-todo">待写</td></tr>
+      <tr><td>16</td><td>9/12</td><td>六</td><td><span class="tag tch">师</span></td><td>新手老师怎么快速上手读写联动课？课件给你搭好了</td><td>备课减负</td><td>教师共鸣</td><td>12:00</td><td class="st st-todo">待写</td></tr>
+      <tr><td>17</td><td>9/13</td><td>日</td><td><span class="tag par">家</span></td><td>别报贵的作文班，先把"读写联动"这关过掉</td><td>家长决策</td><td>家长种草</td><td>20:00</td><td class="st st-todo">待写</td></tr>
+      <tr><td>18</td><td>9/14</td><td>一</td><td><span class="tag tch">师</span></td><td>环境描写不是凑字数，是给文章"定调"</td><td>手法干货</td><td>收藏引导</td><td>19:30</td><td class="st st-todo">待写</td></tr>
+      <tr><td>19</td><td>9/15</td><td>二</td><td><span class="tag tch">师</span></td><td>开头3秒定生死：5种阅卷老师偏爱的中考开头</td><td>手法模板</td><td>方法论</td><td>12:30</td><td class="st st-todo">待写</td></tr>
+      <tr><td>20</td><td>9/16</td><td>三</td><td><span class="tag par">家</span></td><td>孩子作文没素材？生活里这3类就能写</td><td>家长向</td><td>家长收藏</td><td>19:30</td><td class="st st-todo">待写</td></tr>
+      <tr><td>21</td><td>9/17</td><td>四</td><td><span class="tag tch">师</span></td><td>30篇训练怎么用最高效？我的课堂实操节奏</td><td>课件用法+种草</td><td>课件转化</td><td>20:00</td><td class="st st-todo">待写</td></tr>
+      <tr><td>22</td><td>9/18</td><td>五</td><td><span class="tag par">家</span></td><td>中考前30天，作文还能涨多少分？</td><td>冲刺干货</td><td>家长紧迫感</td><td>19:30</td><td class="st st-todo">待写</td></tr>
+      <tr><td>23</td><td>9/19</td><td>六</td><td><span class="tag tch">师</span></td><td>教师版+学生版怎么搭配用？一份使用说明书</td><td>课件说明+转化</td><td>引导下单</td><td>12:00</td><td class="st st-todo">待写</td></tr>
+      <tr><td>24</td><td>9/20</td><td>日</td><td><span class="tag par">家</span></td><td>买课≠提分，关键是这步家长要做到</td><td>家长陪伴</td><td>家长共鸣</td><td>20:00</td><td class="st st-todo">待写</td></tr>
+      <tr><td>25</td><td>9/21</td><td>一</td><td><span class="tag tch">师</span></td><td>这届初三，我用读写联动把平均分拉了6分</td><td>成果背书</td><td>人设信任</td><td>19:30</td><td class="st st-todo">待写</td></tr>
+      <tr><td>26</td><td>9/22</td><td>二</td><td><span class="tag par">家</span></td><td>作文总跑题？"审题三步法"一次改掉</td><td>手法</td><td>家长收藏</td><td>12:30</td><td class="st st-todo">待写</td></tr>
+      <tr><td>27</td><td>9/23</td><td>三</td><td><span class="tag tch">师</span></td><td>为什么我坚持做PDF不卖视频课？说点真心话</td><td>人设/信任</td><td>信任收口</td><td>19:30</td><td class="st st-todo">待写</td></tr>
+      <tr><td>28</td><td>9/24</td><td>四</td><td><span class="tag par">家</span></td><td>最后一周，给孩子一份能自己练的作文清单</td><td>促单</td><td>引导下单</td><td>20:00</td><td class="st st-todo">待写</td></tr>
+      <tr><td>29</td><td>9/25</td><td>五</td><td><span class="tag tch">师</span></td><td>课件里最被低估的10页，建议打印贴黑板</td><td>种草收尾</td><td>课件转化</td><td>19:30</td><td class="st st-todo">待写</td></tr>
+      <tr><td>30</td><td>9/26</td><td>六</td><td><span class="tag tch">师</span></td><td>一个月陪跑结束，下一站课件预告+致谢</td><td>收尾+下一课件预告</td><td>预告+致谢</td><td>12:00</td><td class="st st-todo">待写</td></tr>
+    </table>
+  </section>
+
+  <section>
+    <h2>五、团队事务与每日节奏</h2>
+    <h3>5.1 星火助手（运营人员 / AI）每日</h3>
+    <ul>
+      <li>按运营计划当日槽位，生成：笔记内容（长文）→ 配文 → 课件风格截图 → Word（含两部分）→ 同名文件夹。</li>
+      <li>更新本计划「运营记录」板块，把当日文章登记进去。</li>
+      <li>输出后交方老师/郑成博确认，再由其发布。</li>
+    </ul>
+    <h3>5.2 方孟克（项目总负责）</h3>
+    <ul>
+      <li>产品开发（课件内容质量把关）；粉丝互动；群聊答疑。</li>
+      <li>确认星火助手产出后再发布。</li>
+    </ul>
+    <h3>5.3 郑成博（运营负责人）</h3>
+    <ul>
+      <li>日常运营、发布文章、群聊日常维护；持有并管理 GitHub 仓库与对外链接。</li>
+    </ul>
+    <h3>5.4 每周节奏</h3>
+    <p>周一：复盘上周数据（阅读/互动/收藏/成交），微调本周选题；周五：检查货架（课件上架与商品链接）；周日：运营记录周结。</p>
+  </section>
+
+  <section>
+    <h2>六、运营记录</h2>
+    <h3>6.1 本课件全部文章题目（30 篇，详见第四章）</h3>
+    <p style="font-size:13px">1 带过三届毕业班，我发现90%孩子作文输在"不会读" ｜ 2 备课3小时vs3分钟 ｜ 3 孩子作文总写不长 ｜ 4 30种写作手法中考最爱考5种 ｜ 5 九年级作文想上一类文 ｜ 6 改了1000篇中考作文 ｜ 7 陪读别只会催多读书 ｜ 8 读写联动读一句写一句 ｜ 9 手法速查表3周敢下笔 ｜ 10 中考作文评分标准 ｜ 11 细节描写五感慢镜头 ｜ 12 很高兴3个替换 ｜ 13 议论文反着想 ｜ 14 教学设计提分小心机 ｜ 15 真实案例32到41 ｜ 16 新手老师上手读写联动 ｜ 17 别报贵作文班 ｜ 18 环境描写定调 ｜ 19 开头3秒5种 ｜ 20 没素材3类能写 ｜ 21 30篇训练实操节奏 ｜ 22 中考前30天涨分 ｜ 23 教师版+学生版使用说明 ｜ 24 买课不等于提分 ｜ 25 平均分拉6分 ｜ 26 审题三步法 ｜ 27 为什么做PDF ｜ 28 最后一周作文清单 ｜ 29 最被低估10页 ｜ 30 一个月陪跑结束预告</p>
+    <h3>6.2 已编写文章</h3>
+    <p class="st st-done">（暂无，待任务一产出）</p>
+    <h3>6.3 今日（2026-08-28）待发布</h3>
+    <p class="st st-today">Day 1 ·《带过三届毕业班，我发现 90% 孩子作文输在"不会读"》— 状态：星火助手生成中，待方老师/郑成博确认发布。</p>
+    <h3>6.4 发布台账</h3>
+    <table id="ledger"><tr><th>日期</th><th>文章</th><th>笔记图</th><th>配文</th><th>课件截图</th><th>Word</th><th>发布</th></tr>
+      <tr><td>8/28</td><td>Day1 读写联动</td><td>待方老师转图</td><td>已生成</td><td>已生成</td><td>已生成</td><td>待确认发布</td></tr>
+    </table>
+  </section>
+
+  <section>
+    <h2>七、关键指标与复盘</h2>
+    <ul>
+      <li>互动率目标 ≥5%；收藏率 ≥8%（课件类干货易被收藏）；评论占比 ≥30%。</li>
+      <li>转化：笔记→主页商品点击→下单；满 30 天统计总成交与复购意向。</li>
+      <li>复盘：每周一微调选题；30 天结束出《单课件运营复盘》，指导下一个课件。</li>
+    </ul>
+  </section>
+
+  <footer>星火项目 · 运营计划书 ｜ 由星火助手（AI 运营人员）维护 ｜ 最后更新：2026-08-28</footer>
+</div>
+</body>
+</html>
